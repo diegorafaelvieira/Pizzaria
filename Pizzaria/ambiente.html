@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ambiente</title>
+
+<!-- CSS -->
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.maximage.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.fancybox-1.3.1.css" rel="stylesheet" type="text/css" />
+
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.maximage.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
+
+
+</head>
+<body>
+
+
+
+   <div id="maximage">
+   <img src="imagens/f1.jpg" width="1920" height="1200" />
+   <img src="imagens/f2.jpg" width="1920" height="1200" />
+   <img src="imagens/f3.jpg" width="1920" height="1200" />
+</div>
+
+  <!-- DIV DO LOGOTIPO -->
+  <div id="logotopo">
+     <img src="imagens/logotipo.png" width="128" height="128" />
+  </div>  <!-- FIM DA DIV DO LOGOTIPO -->
+  
+<div class="menu" id="menutopo"> <!-- DIV MENU-->
+        <span id="menutopo"><a href="index.html"> HOME   </a>
+        <a href="ambiente.html"> AMBIENTE   </a>
+        <a href="cardapio.html"> CARDÁPIO   </a>
+        <a href="localizacao.html"> LOCALIZAÇÃO   </a>
+        <a href="contato.html"> CONTATO    </a> </span>
+        </div> 
+   
+
+   
+   </div> <!-- FIM DIV MENU-->
+   
+
+
+  <!-- DIV CENTRAL2 -->
+  <div id="central2">
+  <!-- DIV MEIOAMBIENTE-->
+  <div id="meioambiente">
+  <span class="textoconteudo">CLIQUE NAS FOTOS PARA AMPLIAR</span><p>
+
+<a rel="fotos" title="Foto 1"  href="imagens/ambiente1grande.jpg">
+<img width="190" height="156"src="imagens/ambiente1peq.png" /></a>
+
+<a rel="fotos" title="Foto 2"  href="imagens/ambiente2grande.jpg">
+<img width="190" height="156"src="imagens/ambiente2peq.png" /></a>
+
+<a rel="fotos" title="Foto 3"  href="imagens/ambiente3grande.jpg">
+<img width="190" height="156"src="imagens/ambiente3peq.png" /></a>
+
+<a rel="fotos" title="Foto 4"  href="imagens/ambiente4grande.jpg">
+<img width="190" height="156"src="imagens/ambiente4peq.png" /></a>  
+
+
+     
+  </div><!-- FIM DIV MEIOAMBIENTE-->  
+  </div><!-- FIM DA DIV CENTRAL2 -->
+
+
+  <!-- DIV RODAPE -->
+  <div class="textorodape" id="rodape"> LOCALIZAÇÃO:  Rua Tiradentes, 240, São Sebastião do Caí - RS </span>
+    <div id="redes"> <!-- DIV REDES -->
+    <span class="textoredes">REDES SOCIAIS </span></div>
+  
+</div><!-- FIM DIV REDES -->
+  </div><!--FIM DA DIV RODAPE -->
+  
+  <script type="text/javascript">
+   $(window).load(function() {
+     $ ('#slider').nivoSlider();
+  });
+
+  $ (function() {
+  // Trigger maximage
+      jQuery('#maximage').maximage();
+  })
+</script>
+<script> 
+ $("a[rel=fotos]").fancybox({
+'transitionIn'  : 'none',
+'transitionout' : 'none',
+'titlePosition' : 'over',
+'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
+  return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + '/'+ currentArray.legth + (title.length ?'&nbsp; '+ title : '') + '</span>';
+}
+});
+
+
+</script> 
+
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+Body {
+	margin: 0 auto;
+	background-color: #000;
+   
+}
+
+#logotopo {
+   width: 100%;
+   height: 128px;
+   text-align: center;
+}
+
+#menutopo {
+   width: 100%
+   height: 40px;
+   background-image:url(../imagens/FUNDOMENUAMARELO.jpg);
+   background-repeat:repeat-x;
+   border-bottom: 5px #OCF solid;
+   text-align:center;
+   margin:0 auto;
+      
+}
+
+#central {
+   width:100%;
+   height: auto;
+   min-height: 700px;
+   
+}
+
+#central2 {
+   width:100%;
+   height: auto;
+   min-height: 900px;
+   
+}
+
+#conteudo {
+  width: 70%;
+  height: auto;
+  min-height: 500px;
+  margin-left: 15%;
+  background-color:#CC0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px #000 solid;
+}
+
+
+#meio {
+	width: 900px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color:transparent;
+	position:relative;
+	padding: 10px;
+}
+#meioambiente {
+	width: 780px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color:#FF0;
+	position:relative;
+	padding: 30px;
+	
+}
+#cardapio {
+	width: 520px;
+	height: 610px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background-color:#FF0;
+	position:relative;
+	padding: 15px;
+}
+
+#mapa {
+	width: 1050px;
+	height: 410px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color:#FF0;
+	position:relative;
+	padding: 10px;
+}
+
+#contato {
+	width: 480px;
+	height: 710px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color:#FF0;
+	position:relative;
+	padding: 15px;
+}
+
+#ambiente {
+	Width: 200px;
+	height: 180px;
+	background-color:#FF0;
+	display: block;
+	position:relative;
+	margin: 0 auto;	
+	margin-left: 50px;
+	float: left;
+	margin-top: 10px;
+
+}	
+
+#novidades {
+	Width: 200px;
+	height: 180px;
+	background-color:#FF0;
+	display: block;
+	position:relative;
+	margin: 0 auto;	
+	margin-left: 100px;
+	float: left;
+	margin-top: -4px;
+	
+}	
+
+#promocoes {
+	Width: 200px;
+	height: 180px;
+	background-color:#FF0;
+	display: block;
+	position:relative;
+	margin: 0 auto;	
+	margin-left: 100px;
+	float: left;
+	margin-top: -4px;
+
+}
+
+#caixa {
+	Width: 800px;
+	height: 200px;
+	background-color: #FFFFFF;
+	margin-top: 35px;
+	border: 5px #FFCC33 solid;
+	position: relative;
+	display: block;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+#rodape {
+  width:100%;
+  height: 100px;
+  background-color:#FF0;
+  margin: 0 auto;
+  
+  
+}
+
+#redes {
+  width: 25%;
+  height: 100px;
+  background-color:#F00;
+  margin: 0 auto;
+  margin-right: 0px;
+  margin-top: -29px;	
+}
+
+.titulo {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #F00;
+  font-size:36px;
+  font-weight:bold;
+  text-decoration:none;  
+}
+
+.menu {
+  font-family: "Verdana", Geneva, sans-serif;
+  color:#F00;
+  font-size:22px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:50px; 
+  word-spacing: 25px;
+    	
+}
+
+.textocardapio {
+  font-family: "Trebuchet MS", Arial,Helvetica, sans-serif;
+  color:#F00;
+  font-size:13px;
+  font-weight:normal;
+  
+}
+
+.textoredes {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:#FF0;
+  font-size:24px;
+  font-weight:normal;	
+}
+
+.textorodape {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:#F00;
+  font-size:24px;
+  font-weight:normal;
+	
+}
+	
+
+.textoconteudo {
+  font-family: "Trebuchet MS", Arial,Helvetica, sans-serif;
+  color:#F00;
+  font-size:20px;
+  font-weight:normal;
+  
+}
+
+#slider {
+    position:relative;
+	margin: 0 auto;
+	text-align:center;
+    width:800px; /* Change this to your images width */
+    height:200px; /* Change this to your images height */
+    background:url(loading.gif) no-repeat 50% 50%;	
+	border: 1px solid #000;
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+.nivo-controlNav {
+	position:relative;
+	left:140px;
+	top:-42px;
+	z-index: 30;
+}
+.nivo-controlNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../imagens/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:5px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../imagens/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+#menutopo {
+	color: #F00;
+}
+#menutopo #menutopo a {
+	color: #F00;
+}
+#central #conteudo div .textos {
+	color: #008000;
+}
+
+/* FORMULÁRIO DE CONTATO */
+#frmContato{
+	
+	margin: 5px 10px 0 10px;
+	background-image: url(foto_cadeado_area.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	
+}
+
+#frmContato label{
+
+	display:block;
+	margin: 10px 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	
+
+}
+
+#frmContato select {
+	padding:5px;
+	text-align: center;
+
+}
+
+#frmContato

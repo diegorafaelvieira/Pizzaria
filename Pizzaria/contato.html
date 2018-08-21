@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>contato</title>
+
+<!-- CSS -->
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.maximage.css" rel="stylesheet" type="text/css" />
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.maximage.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+
+<script type="text/javascript">
+        $(document).ready( function() {
+          $("#frmContato").validate({
+           // Define as regras  
+           rules:{  
+            f_nome:{  
+                // campoNome será obrigatório (required) e terá tamanho mínimo (minLength)  
+                required: true, minlength: 5
+            },  
+    
+            f_email:{  
+                // campoEmail será obrigatório (required) e precisará ser um e-mail válido (email)  
+                required: true, email: true 
+            },  
+    
+            f_mensagem:{  
+                // campoMensagem será obrigatório (required) e terá tamanho mínimo (minLength)  
+                required: true, minlength: 2  
+            }  
+    
+    },  
+    
+        // Define as mensagens de erro para cada regra  
+        messages:{  
+            f_nome:{  
+                required: "<br>Digite o seu nome",  
+                minlength: "<br>O nome deve conter no mínimo 5 caracteres" 
+            }, 
+             
+            f_email:{  
+                required: "<br>Digite o seu e-mail para contato",  
+                email: "<br>Digite um e-mail válido" 
+            },  
+        
+            f_mensagem:{  
+                required: "<br>Digite a sua mensagem",  
+                minlength: "<br>A sua mensagem deve conter no mínimo 2 caracteres" 
+            }  
+        }  
+        });  
+	}); 
+</script>
+</head>
+
+<body>
+
+   <div id="maximage">
+   <img src="imagens/f1.jpg" width="1920" height="1200" />
+   <img src="imagens/f2.jpg" width="1920" height="1200" />
+   <img src="imagens/f3.jpg" width="1920" height="1200" />
+</div>
+
+  <!-- DIV DO LOGOTIPO -->
+  <div id="logotopo">
+     <img src="imagens/logotipo.png" width="128" height="128" />
+  </div>  <!-- FIM DA DIV DO LOGOTIPO -->
+  
+<div class="menu" id="menutopo"> <!-- DIV MENU-->
+        <span id="menutopo"><a href="index.html"> HOME   </a>
+        <a href="ambiente.html"> AMBIENTE   </a>
+        <a href="cardapio.html"> CARDÁPIO   </a>
+        <a href="localizacao.html"> LOCALIZAÇÃO   </a>
+        <a href="contato.html"> CONTATO    </a> </span>
+</div> 
+   
+
+   
+   </div> <!-- FIM DIV MENU-->
+   
+
+
+  <!-- DIV CENTRAL2 -->
+  <div id="central2">
+  <!-- DIV CONTATO-->
+  <div class="textocardapio" id="contato">
+<form id="frmContato" method="post" action="#">
+        
+        Nome*:
+        <input name="f_nome" type="text" class="inputbox" id="f_nome" size="50" maxlength="50" />
+  <br />
+  <br />
+        E-mail*:
+        <input name="f_email" type="text" class="inputbox" id="f_email" size="50" maxlength="50" />
+        <br />
+        <br />
+        Fone:
+        <input name="f_fone" type="text" class="inputbox" id="fone_fale" size="15" maxlength="10" />
+        <br />
+        <br />
+        Mensagem*:
+  <br />
+      <label for="f_mensagem"></label>
+        <textarea name="f_mensagem" cols="50" rows="10" class="inputbox_text" id="f_mensagem"></textarea>
+        <br />
+        <br />
+        <input name="Enviar" type="submit" class="enviar_contato" id="Enviar" value="Enviar" />
+         <input name="Enviar2" type="reset" class="enviar_contato" id="Enviar2" value="Limpar" />
+         <br />
+        
+	</form>
+  
+  
+
+
+  
+  
+  </div><!-- FIM FRM CONTATO-->  
+  </div><!-- FIM DIV CONTATO-->  
+  </div><!-- FIM DA DIV CENTRAL2 -->
+
+
+  <!-- DIV RODAPE -->
+  <div id="rodape">
+  <div class="textorodape" id="rodape"> LOCALIZAÇÃO:  Rua Tiradentes, 240, São Sebastião do Caí - RS </span>
+    <div id="redes"> <!-- DIV REDES -->
+    <span class="textoredes">REDES SOCIAIS </span></div>
+</div><!-- FIM DIV REDES -->
+  </div><!--FIM DA DIV RODAPE -->
+  
+<script type="text/javascript">
+   $(window).load(function() {
+     $ ('#slider').nivoSlider();
+  });
+
+  $ (function() {
+  // Trigger maximage
+      jQuery('#maximage').maximage();
+  })
+</script>
+</body>
+</html>

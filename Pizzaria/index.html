@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+
+
+<!-- CSS -->
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.maximage.css" rel="stylesheet" type="text/css" />
+
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.maximage.js"></script>
+
+
+</head>
+
+<body>
+    
+    <div id="maximage">
+   <img src="imagens/f1.jpg" width="1920" height="1200" />
+   <img src="imagens/f2.jpg" width="1920" height="1200" />
+   <img src="imagens/f3.jpg" width="1920" height="1200" />
+</div>
+
+  <!-- DIV DO LOGOTIPO -->
+  <div id="logotopo">
+     <img src="imagens/logotipo.png" width="128" height="128" />
+  </div>  <!-- FIM DA DIV DO LOGOTIPO -->
+  
+<div class="menu" id="menutopo">
+        <span id="menutopo"><a href="index.html"> HOME   </a>
+        <a href="ambiente.html"> AMBIENTE   </a>
+        <a href="cardapio.html"> CARDÁPIO   </a>
+        <a href="localizacao.html"> LOCALIZAÇÃO   </a>
+        <a href="contato.html"> CONTATO    </a> </span></div> 
+   
+   <div id="caixa"> <!--Slider-->
+     <div id="slider" class="nivoSlider">
+
+        <img src="imagens/nivo1.jpg" width="800" height="200" />
+        <img src="imagens/nivo2.jpg" width="800" height="200" />
+        <img src="imagens/nivo3.jpg" width="800" height="200" />
+   
+
+                 
+                
+   </div>
+   
+   </div> 
+
+
+  <!-- DIV CENTRAL -->
+  <div id="central">
+
+     <!-- DIV MEIO -->
+    <div id="meio">
+        <!-- DIV AMBIENTE -->
+        <div id="ambiente"> 
+          <span class="textoconteudo">AMBIENTES</span>
+          <img src="imagens/pizza icone.png" width="200" height="156" /></div></p>
+          
+    <!-- FIM DIV AMBIENTE -->
+       
+     <!-- DIV NOVIDADES -->
+     <div id="novidades">
+       <span class="textoconteudo">NOVIDADES</span>
+       <img src="imagens/pizza icone.png" width="200" height="156" /></div></p>
+     <!-- FIM DIV NOVIDADES -->
+      
+      <!-- DIV PROMOÇÕES -->
+      <div id="promocoes">
+       <span class="textoconteudo">PROMOÇÕES</span>
+       <img src="imagens/pizza icone.png" width="200" height="156" /></div></p>
+  <!-- FIM</div>  <!-- FIM DIV  -->
+ 
+  </div><!-- FIM DA DIV MEIO -->
+  </div><!-- FIM DA DIV CENTRAL -->
+
+
+  <!-- DIV RODAPE -->
+  <div class="textorodape" id="rodape"> LOCALIZAÇÃO:  Rua Tiradentes, 240, São Sebastião do Caí - RS </span>
+    <div id="redes"> <!-- DIV REDES -->
+    <span class="textoredes">REDES SOCIAIS </span></div>
+  
+</div><!-- FIM DIV REDES -->
+  </div><!--FIM DA DIV RODAPE -->
+  
+  <script type="text/javascript">
+   $(window).load(function() {
+     $ ('#slider').nivoSlider();
+  });
+
+  $ (function() {
+  // Trigger maximage
+      jQuery('#maximage').maximage();
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.@charset "utf-8";
+
+/* CSS Document */
+
+
+
+
+/* FORMULÁRIO DE CONTATO */
+#frmContato{
+	
+	margin: 10px 30px 0 30px;
+	background-image: url(../professores/icos/foto_cadeado_area.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	
+}
+
+#frmContato label{
+
+	display:block;
+	margin: 10px 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+
+}
+
+#frmContato select {
+	padding:5px;
+	text-align: center;
+
+}
+
+#frmContato input, #frmContato textarea {
+
+	padding:5px;
+	text-align: center;
+	background-color: #F00;
+
+}
+
+#frmContato input:focus, #frmContato select:focus, #frmContato textarea:focus {
+
+	background-color: #E9F7E1;
+
+}
+
+label.error {
+	border: 1px solid red;
+	color: red;
+	width: 70px;
+	padding: 3px;
+	background-color: #99CCFF;
+	width: 120px;
+	text-align:center; 			
+}
